@@ -14,7 +14,7 @@
   <body>
     <strong>Privacy Policy</strong>
     <p>
-      This privacy policy applies to the チャレログ app (hereby referred to as
+      This privacy policy applies to the Challenge Log / チャレンジログ app (hereby referred to as
       "Application") for mobile devices that was created by yokokubo (hereby
       referred to as "Service Provider") as a Free service. This service is
       intended for use "AS IS".
@@ -72,10 +72,12 @@
     </p>
     <br />
     <p>
-      For a better experience, while using the Application, the Service Provider
-      may require you to provide us with certain personally identifiable
-      information. The information that the Service Provider request will be
-      retained by them and used as described in this privacy policy.
+      When you sign in, the Application processes your account identifier,
+      email address, display name, and optional profile photo to provide your
+      account and calendar sharing. Your records, labels, notes, sharing
+      relationships, and notification settings are stored in Firebase when you
+      use the corresponding cloud features. Guest records remain on your device
+      until you choose to sign in and sync them.
     </p>
     <br /><strong>Sharing Records with Other Users</strong>
     <p>
@@ -90,14 +92,17 @@
         at any time.
       </li>
       <li>
-        Community records: you may choose, one record at a time, to show a
-        record to other users of the Application. Other users then see only the
+        Community records: after accepting the community notice, you may turn
+        on "Show my records to everyone" in Settings. Records saved while this
+        setting is on are shown to other users. Notes are included only when
+        the separate note-sharing setting is enabled. Other users see only the
         stamp you chose, its label, the note you attached if you added one, and
         the time at which it was posted. They do not see your name, your
         email address, your account identifier, the calendar date of the
-        record, or any of your other records. Your account is represented by a
-        randomly generated identifier that other users cannot connect to you or
-        to your other posts.
+        record, or your private records. The server uses a random internal
+        author identifier to implement reporting and blocking; it is not a
+        public account profile. The contents of a note or custom label may
+        nevertheless identify you, so do not include personal information.
       </li>
       <li>
         Cheers: other users can send a single cheer on a record. For community
@@ -107,10 +112,13 @@
     <p></p>
     <br />
     <p>
-      A record you show to the community is stored as a separate copy and is
-      deleted automatically 48 hours after it is posted. Turning the record off
-      removes that copy sooner, and deleting or editing the original record
-      updates or removes the shared copy as well.
+      In version 2.2.0, a community record is stored as a separate copy and
+      remains visible until you make it private, delete the original, or it is
+      removed through moderation. Turning "Show my records to everyone" off
+      withdraws all your currently public records. Editing the original updates
+      the public copy. Users who accepted the earlier 48-hour notice must accept
+      the updated notice before creating records without a time limit. Copies
+      created under that earlier notice keep their original expiration.
     </p>
     <br /><strong>Reporting and Blocking</strong>
     <p>
@@ -133,10 +141,18 @@
     </p>
     <br /><strong>Third Party Access</strong>
     <p>
-      Only aggregated, anonymized data is periodically transmitted to external
-      services to aid the Service Provider in improving the Application and
-      their service. The Service Provider may share your information with third
-      parties in the ways that are described in this privacy statement.
+      Firebase (Google) processes account information, cloud records, profile
+      images, device notification tokens, and technical service information to
+      operate sign-in, storage, sharing, and notifications. Sentry processes
+      error reports and technical diagnostic information to identify failures.
+      Google AdMob may process IP-derived approximate location, device or
+      app-scoped identifiers, ad interactions, crash information, and performance
+      information for advertising, measurement, and fraud prevention.
+      Version 2.2.0 requests non-personalized ads, disables the publisher
+      first-party advertising identifier, and does not request access to IDFA.
+      Where consent is required, ads are requested only after the consent flow
+      permits them. A privacy-options control is provided when required so you
+      can revise your choice. The Application does not access GPS location.
     </p>
     <!----><br />
     <p>
@@ -174,8 +190,11 @@
       to delete User Provided Data that you have provided via the Application,
       please contact them at johnworks.em0@gmail.com and they will respond in a
       reasonable time.
-      Records that you showed to the community are deleted automatically 48
-      hours after they were posted, without any action from you.
+      Community copies created after accepting the updated 2.2.0 notice have
+      no automatic time-based expiration. You control their visibility through
+      Settings and by editing or deleting the original record. Reports and
+      moderation history are separate from the public copies and may be retained
+      to handle abuse and support requests.
     </p>
     <br /><strong>Children</strong>
     <p>
@@ -219,7 +238,7 @@
       approval of all changes.
     </p>
     <br />
-    <p>This privacy policy is effective as of 2026-09-08</p>
+    <p>This privacy policy is effective as of 2026-09-20</p>
     <br /><strong>Your Consent</strong>
     <p>
       By using the Application, you are consenting to the processing of your
